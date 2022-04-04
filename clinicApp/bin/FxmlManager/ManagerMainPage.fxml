@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="992.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxmlManager.ManagerMainPageController">
+   <children>
+      <Pane opacity="0.6" prefHeight="200.0" prefWidth="992.0" style="-fx-background-color: CORNSILK;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="55.0" prefHeight="90.0" prefWidth="445.0" text="Manager Main Page" textAlignment="CENTER" textFill="#017330" wrapText="true">
+               <font>
+                  <Font name="Sitka Display Bold" size="40.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+         </children></Pane>
+      <Button fx:id="btnBack" layoutX="193.0" layoutY="551.0" mnemonicParsing="false" onAction="#Back" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: INDIANRED; -fx-background-radius: 30;" text="Back">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEncrypt" layoutX="259.0" layoutY="264.0" mnemonicParsing="false" onAction="#Encrypt" prefHeight="54.0" prefWidth="226.0" text="Encrypt All" />
+      <Button fx:id="btnChangeKeyValue" layoutX="259.0" layoutY="411.0" mnemonicParsing="false" onAction="#ChangeKeyValue" prefHeight="54.0" prefWidth="226.0" text="Change key value" />
+      <Button fx:id="btnSignOut" layoutX="724.0" layoutY="210.0" mnemonicParsing="false" onAction="#SignOut" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: INDIANRED; -fx-background-radius: 30;" text="Sign Out">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDecrypt" layoutX="259.0" layoutY="338.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="54.0" prefWidth="226.0" text="Decrypt All" />
+   </children>
+</Pane>

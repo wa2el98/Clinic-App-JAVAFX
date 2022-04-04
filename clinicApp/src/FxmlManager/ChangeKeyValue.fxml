@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="992.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxmlManager.ChangeKeyValueController">
+   <children>
+      <Pane opacity="0.6" prefHeight="200.0" prefWidth="992.0" style="-fx-background-color: CORNSILK;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="52.0" prefHeight="97.0" prefWidth="572.0" text="Change Key Value" textAlignment="CENTER" textFill="#017330" wrapText="true">
+               <font>
+                  <Font name="Sitka Display Bold" size="48.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+         </children></Pane>
+      <Text fill="#f50505" layoutX="392.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font name="Modern No. 20" size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtN" layoutX="209.0" layoutY="211.0" prefHeight="33.0" prefWidth="178.0" style="-fx-background-radius: 30;">
+         <font>
+            <Font name="Sitka Display Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" graphicTextGap="10.0" layoutX="127.0" layoutY="213.0" prefHeight="33.0" prefWidth="80.0" text="N key :">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="621.0" layoutY="568.0" mnemonicParsing="false" onAction="#Save" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: DARKSEAGREEN; -fx-background-radius: 30;" text="Save">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="240.0" layoutY="568.0" mnemonicParsing="false" onAction="#Back" prefHeight="54.0" prefWidth="132.0" style="-fx-background-color: INDIANRED; -fx-background-radius: 30;" text="Back">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" graphicTextGap="10.0" layoutX="90.0" layoutY="270.0" prefHeight="33.0" prefWidth="119.0" text="Variance :">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Text fill="#f50505" layoutX="390.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font name="Modern No. 20" size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtVariance" layoutX="207.0" layoutY="269.0" prefHeight="33.0" prefWidth="178.0" style="-fx-background-radius: 30;">
+         <font>
+            <Font name="Sitka Display Bold" size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>
